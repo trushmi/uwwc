@@ -1,0 +1,19 @@
+@import "/src/style/variables.scss";
+
+.qoute {
+  font-size: 21px;
+  font-style: italic;
+  margin: 0px 0px 45px 0px;
+}
+
+.app-header {
+  background-color: $brand-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $text-brand-color;
+  padding: 20px;
+}

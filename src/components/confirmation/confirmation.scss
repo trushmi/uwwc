@@ -1,0 +1,29 @@
+@import "/src/style/variables.scss";
+
+.confirmation-page-wrapper {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+
+  .confirmation-page-container {
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    background: $blured-brand-color;
+    border-radius: 20px;
+    padding: 40px 20px;
+    font-weight: bold;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 10%);
+  }
+  .confirmation-page-signature {
+    text-align: right;
+    font-style: italic;
+    padding: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}

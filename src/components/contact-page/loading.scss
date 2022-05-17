@@ -1,0 +1,52 @@
+@import "/src/style/variables.scss";
+
+.loading-container {
+  background-color: $second-brand-color;
+  width: 453px;
+  height: 580px;
+  position: fixed;
+
+  .loading {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    color: $text-brand-color;
+    letter-spacing: 2px;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    border: 9px solid $blured-brand-color;
+    border-radius: 50%;
+  }
+  .loading:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -79px;
+    left: -3px;
+    border-top: 4px solid $brand-color;
+    border-radius: 50%;
+    animation: MakeCircle 2s linear infinite;
+  }
+
+  @keyframes MakeCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes MakeCircle {
+    0% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(405deg);
+    }
+  }
+}

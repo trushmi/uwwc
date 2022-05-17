@@ -1,0 +1,87 @@
+@import "/src/style/variables.scss";
+.contact-form-page {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .contact-form-container {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    color: $second-brand-color;
+    margin-top: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    .contact-form {
+      background-color: $second-brand-color;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      text-align: left;
+      padding: 25px 40px 10px 20px;
+      border-radius: 5px;
+      margin: 10px 0;
+      font-size: 16px;
+      color: $text-brand-color;
+      outline: 2px solid $brand-color;
+    }
+
+    .input {
+      padding: 10px 10px;
+      font-size: 16px;
+      cursor: pointer;
+      outline: none;
+      display: block;
+      width: 100%;
+      margin: 10px 0 10px 0;
+    }
+    .text-area {
+      width: 89%;
+      font-size: 16px;
+      outline: none;
+      padding: 10px;
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .name-email-container {
+      display: flex;
+      justify-content: center;
+    }
+    .text-area-title {
+      text-align: left;
+      padding-bottom: 10px;
+    }
+    .submit-button-container {
+      margin: 10px;
+      text-align: center;
+      width: 100%;
+    }
+    .contact-title {
+      margin: 10px;
+      font-size: 21px;
+      color: $text-brand-color;
+      font-weight: bold;
+    }
+    .btn {
+      font-size: 18px;
+      padding: 8px 25px;
+      border-radius: 6px;
+      border: 1.3px solid $text-brand-color;
+      cursor: pointer;
+      background-color: $text-brand-color;
+      color: $brand-color;
+    }
+    .btn:hover {
+      transform: scale(0.97);
+      color: $text-brand-color;
+      background-color: $brand-color;
+    }
+  }
+}

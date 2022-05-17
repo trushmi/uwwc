@@ -18,7 +18,7 @@ function App() {
         </p>
         <Btn
           btnText={"Join the club"}
-          style="secondary"
+          theme="secondary"
           onClick={onJoinClick}
         />
       </header>

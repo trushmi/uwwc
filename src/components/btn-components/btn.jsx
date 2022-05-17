@@ -7,19 +7,19 @@ Btn.propTypes = {
   btnText: PropTypes.string.isRequired,
   type: PropTypes.string,
   onClick: PropTypes.func.isRequired,
-  style: PropTypes.oneOf(["primary", "secondary"]),
+  theme: PropTypes.oneOf(["primary", "secondary"]),
 };
 
 Btn.defaultProps = {
   type: "button",
-  style: "primary",
+  theme: "primary",
 };
 
-export default function Btn({ btnText, type, onClick, style }) {
+export default function Btn({ btnText, type, onClick, theme }) {
   return (
     <div>
       <button
-        className={classNames("btn", style)}
+        className={classNames("btn", theme)}
         type={type}
         onClick={onClick}
       >

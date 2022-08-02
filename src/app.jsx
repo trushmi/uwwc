@@ -14,7 +14,7 @@ function App() {
         <h1> Ukrainian women who code {"</>"} </h1>
         <p className="qoute">
           Inspires women not to be afraid to change their career and start their
-          journey into tech
+          journey in tech
         </p>
         <Btn
           btnText={"Join the club"}

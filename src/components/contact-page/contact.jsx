@@ -34,9 +34,9 @@ export default function Contact() {
         </div>
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <label>Name:</label>
-          <input name="name" className="input" type="text" id="name" />
+          <input name="name" className="input" type="text" id="name" required />
           <label> Email Address:</label>
-          <input type="email" name="email" className="input" />
+          <input type="email" name="email" className="input" required />
           <label>Tell us more about you:</label>
           <textarea
             name="message"
@@ -44,6 +44,7 @@ export default function Contact() {
             className="text-area"
             cols="10"
             rows="10"
+            required
           />
           <div className="submit-button-container">
             <input type="submit" value="Send" className="btn" />
